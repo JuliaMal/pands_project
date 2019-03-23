@@ -1,9 +1,31 @@
-with open("Iris_flower_data.csv", "r") as f:
-    #print(f.read())
-    print(f.head()) #to check the first 10 rows of the data set
-    print(f.tail()) #to check out last 10 row of the data set)
+import numpy as np
 
+#importing data from the csv file
+data = np.genfromtxt("iris_data.csv", delimiter=',')
 
-# closing text file
-f.close()
+# getting first column data (sepal length)
+firstcol = data[:,0]
+# getting first column data (sepal width)
+secondcol = data[:,1]
+# getting third column data (petal length)
+thirdcol = data[:,2]
+# getting fourth column data (petal width)
+fourthcol = data[:,3]
 
+# calculating average value of the first column
+avgsepall = np.mean(firstcol)
+avgsepalw = np.mean(secondcol)
+avgpetall = np.mean(thirdcol)
+avgpetalw = np.mean(fourthcol)
+
+# printing each column as array
+print(firstcol)
+print(secondcol)
+print(thirdcol)
+print(fourthcol)
+
+# printing average of each column
+print(avgsepall)
+print(avgsepalw)
+print(avgpetall)
+print(avgpetalw)
