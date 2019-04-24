@@ -3,7 +3,18 @@
 This repository contains my Project 2019 for the module "Progmramming and Scripting" at GMIT.
 
 For more information please visit the Githib repository: 
-https://https://github.com/JuliaMal/pands_project
+https://github.com/JuliaMal/pands_project
+
+#1 How to download this repository:
+
+Go to Github or click on the link provided earlier.
+Clich the "Clone or Download" button
+Choose between the options "Open in Desktop" or "Download ZIP"
+#2 How to run the code:
+
+To run any of Python codes you need to install Python first
+Make sure that you're in the same directory as the saved in the repository, you have downloaded in step #1
+In the command line type python iris.py
 
 # About the Fisher’s Iris data set
 
@@ -35,3 +46,12 @@ One class is linearly separable from the other 2; the latter are NOT linearly se
 
 The data set has no null values.
 
+# About the code:
+
+1. The program calculates the average sepal length & width and petal length & width
+
+2. The program also provides the user with 4 plots:
+    - Box plot
+    - Scatter plot
+    - Violin plot (includes petal length & width data)
+    - Violin plot (includes sepal length & width data)
